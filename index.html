@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Portfólio - Max Dev</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wraper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid">M</i> <!-- O "M" dentro da bolinha -->
+                    <div class="logo-text"> Max Dev</div>
+                </div>
+                
+                <nav>
+                    <div class="togglebtn" aria-label="Abrir menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://github.com/maxlima1165">Portfolio</a></li>
+                        <li><a href="https://w.app/dhXo2v">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./img/pessoa1.png" alt="Max Dev - Desenvolvedor Front End">
+                </div>
+                <div class="hero-text">
+                    <h5>Sou Apenas Um <span class="type">Front End Developer Junior</span></h5>
+                    <h1>Max Dev</h1>
+                    <p>
+                        Olá! Sou um programador apaixonado por tecnologia e pelo impacto que ela pode gerar no mundo. Com experiência em desenvolvimento web utilizando HTML, CSS e JavaScript, tenho como objetivo criar soluções práticas, eficientes e visualmente agradáveis. Gosto de transformar ideias em realidade digital, sempre buscando inovação e aprendizado constante.
+                    </p>
+                    <div class="btngroup">
+                        <a href="https://w.app/dhXo2v" class="btn">Contato</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.instagram.com/max_ccb9/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/maxlima1165" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Max Dev | Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+var togglebtn = document.querySelector(".togglebtn");
+var nav = document.querySelector(".nav-links"); // Corrigido a classe
+var links = document.querySelectorAll(".nav-links li"); // Corrigido a seleção de todos os links dentro do menu
+
+togglebtn.addEventListener("click", function() {
+    this.classList.toggle("click");
+    nav.classList.toggle("open");
+})
+
+var typed = new Typed(".type", {
+    strings: ["Frontend Developer",  "Web Developer"],
+    typedSpeed: 70,
+    backSpeed: 55,
+    loop: true
+});
+    </script>
+</body>
+</html>
